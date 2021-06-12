@@ -83,7 +83,8 @@ public class song {
         double Gb = 1479.98;
         int[] sound1 = cosineSound(8000, B, 10000);
         int[] sound2 = cosineSound(8000, E, 10000);
-        int[] sound3 = cosineSound(22000, Eb, 10000);int[] sound4 = cosineSound(8000, E, 10000);
+        int[] sound3 = cosineSound(22000, Eb, 10000);
+        int[] sound4 = cosineSound(8000, E, 10000);
         int[] sound5 = cosineSound(16000, Eb, 10000);
         int[] sound6 = cosineSound(16000, Db, 10000);
         int[] sound7 = cosineSound(22000, B, 10000);
