@@ -1,6 +1,8 @@
 import java.lang.Math.*;
 
 public class song {
+
+	
     static final int SAMPLE_RATE = 22051;  // 22.05 KHz
 
     static int[] subSamples(int[] sound, int startIndex, int count){
@@ -16,9 +18,32 @@ public class song {
     }
 
     static int[] mix(int[] sound1, int[] sound2){
-        return new int[0];
+		return new int[0];
+    }
+	public static int[] changeVolume(int[] sound, double scalar){
+        int[] res = new int[sound.length];
+        for(int i = 0; i < sound.length; i++){
+            res[i] = CSE8ALib.doubleToInt(CSE8ALib.intToDouble(sound[i]) * scalar);
+        }
+        return res;
     }
 
+    // DO NOT CHANGE
+    // printArray
+    // 1 parameter:
+    //      1) array of ints representing one sound
+    // returns:
+    //      this function does not return anything
+    public static void printArray(int[] array){
+        System.out.print("{");
+        for(int i = 0; i < array.length-1; i++){
+            System.out.print(array[i] + ", ");
+        }
+        if (array.length > 0) {
+            System.out.print(array[array.length-1]);
+        }
+        System.out.println("}");
+    }
     public static void main(String[] args){
 //sound 1
         CSE8ALib.play(conCAT());
