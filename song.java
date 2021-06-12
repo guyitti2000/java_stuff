@@ -1,5 +1,6 @@
 import java.lang.Math.*;
 
+
 public class song {
 
 	
@@ -81,22 +82,22 @@ public class song {
         double E = 1318.51;
         double Ab = 830.61;
         double Gb = 1479.98;
-        int[] sound1 = cosineSound(8000, B, 10000);
-        int[] sound2 = cosineSound(8000, E, 10000);
-        int[] sound3 = cosineSound(22000, Eb, 10000);
-        int[] sound4 = cosineSound(8000, E, 10000);
-        int[] sound5 = cosineSound(16000, Eb, 10000);
-        int[] sound6 = cosineSound(16000, Db, 10000);
-        int[] sound7 = cosineSound(22000, B, 10000);
-        int[] sound8 = cosineSound(8000, Db, 10000);
-        int[] sound9 = cosineSound(16000, Eb, 10000);
-        int[] sound10 = cosineSound(16000, B, 10000);
-        int[] sound11 = cosineSound(16000, Ab, 10000);
-        int[] sound12 = cosineSound(8000, B, 10000);
-        int[] sound13 = cosineSound(16000, Gb, 10000);
-        int[] sound14 = cosineSound(8000, B, 10000);
-        int[] sound15 = cosineSound(8000, Eb, 10000);
-        int[] sound16 = cosineSound(12000, Eb, 10000);
+        int[] sound1 = cosineSound(8000, (int) B, 10000);
+        int[] sound2 = cosineSound(8000, (int) E, 10000);
+        int[] sound3 = cosineSound(22000, (int) Eb, 10000);
+        int[] sound4 = cosineSound(8000, (int) E, 10000);
+        int[] sound5 = cosineSound(16000, (int) Eb, 10000);
+        int[] sound6 = cosineSound(16000, (int) Db, 10000);
+        int[] sound7 = cosineSound(22000, (int) B, 10000);
+        int[] sound8 = cosineSound(8000, (int) Db, 10000);
+        int[] sound9 = cosineSound(16000, (int) Eb, 10000);
+        int[] sound10 = cosineSound(16000, (int) B, 10000);
+        int[] sound11 = cosineSound(16000, (int) Ab, 10000);
+        int[] sound12 = cosineSound(8000, (int) B, 10000);
+        int[] sound13 = cosineSound(16000, (int) Gb, 10000);
+        int[] sound14 = cosineSound(8000, (int) B, 10000);
+        int[] sound15 = cosineSound(8000, (int) Eb, 10000);
+        int[] sound16 = cosineSound(12000, (int) Eb, 10000);
         int[] sound17 = cosineSound(28000, 10, 100);
         int[] combines1 = concatSounds(sound1, sound2);
         int[] combines2 = concatSounds(sound3, sound4);
@@ -124,21 +125,21 @@ public class song {
         double Ab = 830.61;
         double Gb = 1479.98;
         double Abup = 1661.22;
-        int[] sound1 = cosineSound(8000, B, 10000);
-        int[] sound2 = cosineSound(8000, E, 10000);
-        int[] sound3 = cosineSound(22000, Eb, 10000);
-        int[] sound4 = cosineSound(8000, E, 10000);
-        int[] sound5 = cosineSound(16000, Eb, 10000);
-        int[] sound6 = cosineSound(16000, Db, 10000);
-        int[] sound7 = cosineSound(22000, B, 10000);
-        int[] sound8 = cosineSound(8000, Db, 10000);
-        int[] sound9 = cosineSound(16000, Eb, 10000);
-        int[] sound10 = cosineSound(22000, Abup, 10000);
-        int[] sound11 = cosineSound(16000, Eb, 10000);
-        int[] sound12 = cosineSound(8000, Ab, 10000);
-        int[] sound13 = cosineSound(16000, B, 10000);
-        int[] sound14 = cosineSound(16000, Db, 10000);
-        int[] sound15 = cosineSound(16000, B, 10000);
+        int[] sound1 = cosineSound(8000,(int) B, 10000);
+        int[] sound2 = cosineSound(8000,(int) E, 10000);
+        int[] sound3 = cosineSound(22000,(int) Eb, 10000);
+        int[] sound4 = cosineSound(8000, (int) E, 10000);
+        int[] sound5 = cosineSound(16000, (int) Eb, 10000);
+        int[] sound6 = cosineSound(16000, (int) Db, 10000);
+        int[] sound7 = cosineSound(22000, (int) B, 10000);
+        int[] sound8 = cosineSound(8000, (int) Db, 10000);
+        int[] sound9 = cosineSound(16000, (int) Eb, 10000);
+        int[] sound10 = cosineSound(22000, (int) Abup, 10000);
+        int[] sound11 = cosineSound(16000, (int) Eb, 10000);
+        int[] sound12 = cosineSound(8000, (int) Ab, 10000);
+        int[] sound13 = cosineSound(16000, (int) B, 10000);
+        int[] sound14 = cosineSound(16000, (int) Db, 10000);
+        int[] sound15 = cosineSound(16000, (int) B, 10000);
         int[] combines1 = concatSounds(sound1, sound2);
         int[] combines2 = concatSounds(sound3, sound4);
         int[] combined1 = concatSounds(combines1, combines2);
@@ -149,7 +150,7 @@ public class song {
         int[] combines5 = concatSounds(sound9, sound10);
         int[] combines6 = concatSounds(sound11, sound12);
         int[] combined3 = concatSounds(combines5, combines6);
-        int[] combines7 = cocatSounds(sound13, sound14);
+        int[] combines7 = concatSounds(sound13, sound14);
         int[] combined4 = concatSounds(combines7, sound15);
         int[] combcomb2 = concatSounds(combined3, combined4);
         int[] SONG = concatSounds(combcomb1, combcomb2);
